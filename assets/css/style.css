@@ -910,6 +910,8 @@ body {
 .filtr-container .filtr-item:hover .item-title a,
 .filtr-container .filtr-item:hover .item-title p {
     color: #2cdbb5;
+    text-shadow: 0px 0px 5px black;
+    font-size: x-large;
 }
 
 /*.item-title*/
