@@ -1387,6 +1387,9 @@ body {
     color: #565a5c;
     font-size: 16px;
     font-family: Shabnam;
+    display: flex;
+    direction: rtl;
+    justify-content: space-evenly
 }
 
 .thumbnail span {
@@ -1446,6 +1449,7 @@ body {
 .blog-txt {
     margin-top: 8px;
     margin-left: 12px;
+    direction: rtl;
 }
 
 .blog-content .caption .blog-txt h3 a {
