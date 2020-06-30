@@ -1,5 +1,6 @@
-$(document).ready(function(){
-
+$(document).ready(function() {
+/* eslint-disable*/
+    
 	"use strict";
 
     
@@ -60,14 +61,14 @@ $(document).ready(function(){
         $( "#slider-range" ).slider({
             range: true,
             min: 0,
-            max: 12000,
-            values: [ 2677, 9241 ],
+            max: 12000000,
+            values: [ 2562000, 6780000 ],
             slide: function( event, ui ) {
-            $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+            $( "#amount" ).val( " تومان" + ui.values[ 1 ] + " - " + ui.values[ 0 ] );
             }
         });
-        $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-        " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+        $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
+        " -  تومان" + $( "#slider-range" ).slider( "values", 1 ) );
         
         
         // Quantity Buttons Shop
@@ -90,7 +91,7 @@ $(document).ready(function(){
         
         function makeTimer() {
 
-                var endTime = new Date("March 7, 2018 12:00:00 PDT");            
+                var endTime = new Date("March 7, 2021 12:00:00 PDT");            
                 var endTime = (Date.parse(endTime)) / 1000;
 
                 var now = new Date();
@@ -107,10 +108,10 @@ $(document).ready(function(){
                 if (minutes < "10") { minutes = "0" + minutes; }
                 if (seconds < "10") { seconds = "0" + seconds; }
 
-                $("#days").html(days + '<span class="camp">Days</span>');
-                $("#hours").html(hours + '<span class="camp">Hour</span>');
-                $("#minutes").html(minutes + '<span class="camp">Minute</span>');
-                $("#seconds").html(seconds + '<span class="camp">Second</span>');       
+                $("#days").html(days + '<span class="camp">روز</span>');
+                $("#hours").html(hours + '<span class="camp">ساعت</span>');
+                $("#minutes").html(minutes + '<span class="camp">دقیقه</span>');
+                $("#seconds").html(seconds + '<span class="camp">ثانیه</span>');       
 
         }
         

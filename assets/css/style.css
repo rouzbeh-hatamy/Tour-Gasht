@@ -704,12 +704,11 @@ body {
     font-weight: 500;
     font-size: 14px;
     color: #aaa;
-    letter-spacing: 5.5px;
+    letter-spacing: 1.5px;
     height: 40px;
     text-align: center;
     width: 280px;
     border: none !important;
-    ;
     font-family: Shabnam;
 }
 
@@ -1014,6 +1013,10 @@ body {
     transition: .5s;
 }
 
+.single-package-item-txt h3 span {
+    direction: rtl;
+}
+
 .single-package-item-txt {
     padding: 0 25px;
 }
@@ -1051,6 +1054,7 @@ body {
     color: #aaa;
     font-family: Shabnam;
     margin-bottom: 15px;
+    direction: rtl;
 }
 
 .packages-para p span {
@@ -1061,6 +1065,10 @@ body {
 .packages-review p i {
     color: #ffdf00;
     font-size: 16px;
+}
+
+.packages-review {
+    direction: rtl;
 }
 
 .packages-review span {
