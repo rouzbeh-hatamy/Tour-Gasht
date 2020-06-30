@@ -363,13 +363,20 @@ body {
     margin: -175px 0 0 0;
 }
 
+.about-us-txt {
+    display: flex;
+    direction: rtl;
+    flex-direction: column;
+}
+
 .about-us h2 {
     color: #fff;
     font-size: 84px;
     text-transform: inherit;
-    max-width: 800px;
+    max-width: 80vw;
     font-weight: 600;
     line-height: 1.22;
+    direction: rtl;
 }
 
 .about-us h2 span {
